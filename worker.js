@@ -1,47 +1,49 @@
+/* eslint no-console: off */
 import Queue from 'bull';
-import imageThumbnail from 'image-thumbnail';
-import fs from 'fs';
-import dbClient from './utils/db';
+import { ObjectId } from 'mongodb';
+import generateThumbnail from './utils/thumbnails';
+import UsersCollection from './utils/users';
+import FilesCollection from './utils/files';
 
-const fileQueue = new Queue('fileQueue', {
-  redis: {
-    host: '127.0.0.1',
-    port: 6379,
-  },
+const fileQueue = Queue('thumbnail generation');
+const userQueue = Queue('send welcome email');
+
+// Thumbnail jobs consumer
+fileQueue.process(10, async (job) => {
+  const { fileId, userId } = job.data;
+  // job essential properties validation
+  if (!fileId) throw new Error('Missing fileId');
+  if (!userId) throw new Error('Missing userId');
+
+  // file id and user id conversion to ObjectId before querying db
+  const _id = ObjectId.isValid(fileId) ? new ObjectId(fileId) : fileId;
+  const _userId = ObjectId.isValid(userId) ? new ObjectId(userId) : userId;
+  const file = await FilesCollection.getFile({ _id, userId: _userId });
+  const { localPath } = file;
+
+  // Check if file exists in db
+  if (!file) throw new Error('File not found');
+
+  // Create thumbnails and store them in local storage
+  await generateThumbnail(localPath);
+
+  return Promise.resolve(`Thumbnails for ${file.name} created successfully.`);
 });
 
-const generateThumbnails = async (width, localPath) => {
-  const thumbnail = await imageThumbnail(localPath, {
-    width,
-  });
-  return thumbnail;
-};
+fileQueue.on('completed', (job, result) => {
+  console.log(`Thumbnail generation job #${job.id} completed: ${result}`);
+});
 
-fileQueue.process(async (job, done) => {
-  const { userId, fileId } = job.data;
-  if (!userId) {
-    done(new Error('Missing userId'));
-  }
-  if (!fileId) {
-    done(new Error('Missing fileId'));
-  }
+// Email jobs consumer
+userQueue.process(20, async (job) => {
+  const { userId } = job.data;
+  if (!userId) throw new Error('Missing userId');
+  const _id = ObjectId.isValid(userId) ? new ObjectId(userId) : userId;
+  const user = await UsersCollection.getUser({ _id });
+  if (!user) throw new Error('User not found');
+  return Promise.resolve(`Welcome ${user.email}`);
+});
 
-  const files = dbClient.db.collection('files');
-  const file = await files.findOne({ _id: fileId, userId });
-  if (!file) {
-    done(new Error('File not found'));
-  }
-
-  // generate thumbnail
-  const thumbnail500 = await generateThumbnails(500, file.localPath);
-  const thumbnail250 = await generateThumbnails(250, file.localPath);
-  const thumbnail100 = await generateThumbnails(100, file.localPath);
-
-  const localPath500 = `${file.localPath}_500`;
-  const localPath250 = `${file.localPath}_250`;
-  const localPath100 = `${file.localPath}_100`;
-
-  await fs.promises.writeFile(localPath500, thumbnail500);
-  await fs.promises.writeFile(localPath250, thumbnail250);
-  await fs.promises.writeFile(localPath100, thumbnail100);
+userQueue.on('completed', (_job, result) => {
+  console.log(result);
 });
