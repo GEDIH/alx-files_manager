@@ -43,6 +43,7 @@ describe('testing App Status Endpoints', () => {
       const response = await request(app).get('/stats').send();
       const body = JSON.parse(response.text);
 
+      
       expect(body).to.eql({ users: 1, files: 2 });
       expect(response.statusCode).to.equal(200);
     });
