@@ -21,7 +21,6 @@ describe('testing User Endpoints', () => {
     email: 'bob@dylan.com',
     password: 'toto1234!',
   };
-
   before(async () => {
     await redisClient.client.flushall('ASYNC');
     await dbClient.usersCollection.deleteMany({});
