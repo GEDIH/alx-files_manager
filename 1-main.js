@@ -1,5 +1,4 @@
 import dbClient from './utils/db';
-
 const waitConnection = () => {
     return new Promise((resolve, reject) => {
         let i = 0;
