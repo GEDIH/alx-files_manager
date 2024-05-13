@@ -38,7 +38,6 @@ function controllerRouting(app) {
   router.get('/connect', (req, res) => {
     AuthController.getConnect(req, res);
   });
-
   // should sign-out the user based on the token
   router.get('/disconnect', (req, res) => {
     AuthController.getDisconnect(req, res);
