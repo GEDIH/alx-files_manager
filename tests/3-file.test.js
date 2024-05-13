@@ -10,7 +10,6 @@ import redisClient from '../utils/redis';
 
 use(chaiHttp);
 should();
-
 // User Endpoints ==============================================
 
 describe('testing User Endpoints', () => {
