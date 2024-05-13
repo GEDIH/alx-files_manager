@@ -1,5 +1,4 @@
 # 0x04. Files manager
-
 This repository contains a file manager application built with Node.js. The application allows users to upload, manage, and share files efficiently. Below is an overview of the project structure and functionalities.
 
 ## Table of Contents
@@ -105,7 +104,6 @@ DB_NAME=mydatabase
 REDIS_HOST=localhost
 REDIS_PORT=5000
 ```
-
 Make sure to keep the `.env` file secure and never commit it to version control, as it may contain sensitive information like database credentials.    
 
 ## Usage
